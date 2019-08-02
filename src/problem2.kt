@@ -1,4 +1,4 @@
-fun fibonacci(): Sequence<Int> =
+fun fibonacci() =
     generateSequence(Pair(0, 1)) { Pair(it.second, it.first + it.second) }.map { it.first }
 
 fun problem2() =
